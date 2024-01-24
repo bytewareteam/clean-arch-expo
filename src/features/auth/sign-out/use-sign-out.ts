@@ -1,6 +1,6 @@
-import {useCallback} from "react";
-import {signOut} from "@features/auth/use-auth";
+import { signOut } from '@features/auth';
+import { useCallback } from 'react';
 
 export const useSignOut = () => {
-    return useCallback(() => signOut(), [])
-}
+  return useCallback(() => signOut(), []);
+};
